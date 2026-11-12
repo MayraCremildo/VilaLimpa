@@ -137,3 +137,84 @@
     bottom: 12% !important;
   }
 }
+
+
+/* Ajustes responsivos mobile */
+@media (max-width: 640px) {
+  body { font-size: 14px; }
+  .header { position: absolute; height: 60px; padding: 0 5%; }
+  .logo { font-size: 18px; }
+  .nav { top: 60px; padding: 18px 7% 22px; z-index: 30; }
+  .nav a { font-size: 14px; padding: 4px 0; }
+  .hero { display: flex; flex-direction: column; padding-top: 60px; }
+  .hero-copy { padding: 46px 7% 32px; }
+  .eyebrow { font-size: 12px; }
+  .hero h1 { font-size: clamp(30px, 8.5vw, 38px); line-height: 1.12; letter-spacing: -1px; }
+  .intro { font-size: 13px; line-height: 1.65; margin-bottom: 22px; }
+  .socials { margin-top: 25px; }
+  .hero-visual { width: 100%; min-height: 0; height: clamp(290px, 88vw, 390px); border-radius: 0 0 0 28%; overflow: visible; }
+  .hero-visual > img { border-radius: 0 0 0 28%; object-position: center 38%; }
+  .quality { width: 58px; height: 58px; left: 7%; top: 12%; }
+  .quality span { width: 33px; height: 33px; font-size: 20px; }
+  .pro { right: 6%; top: 42%; padding: 10px 13px; }
+  .pro b { font-size: 23px; }
+  .float-card strong { font-size: 16px; }
+  .float-card small { font-size: 9px; }
+  .hero-visual > .float-card.best { left: 4% !important; bottom: 8% !important; padding: 10px 13px; gap: 9px; max-width: 82%; }
+  .hero-visual > .float-card.best b { font-size: 23px; padding: 3px 7px; }
+  .hero-visual > .float-card.best strong { font-size: 21px; }
+  .section { padding: 48px 7%; }
+  .services { padding-top: 48px; padding-bottom: 42px; }
+  .services h2, .pricing > h2 { font-size: clamp(24px, 6.5vw, 29px); line-height: 1.2; }
+  .service-grid { display: grid; grid-template-columns: 1fr; gap: 13px; }
+  .service-card, .service-card:nth-child(4), .service-card:nth-child(5) { grid-column: 1; min-height: 0; padding: 21px 18px; }
+  .service-card h3 { font-size: 15px; }
+  .service-card p { font-size: 12px; line-height: 1.6; }
+  .stats { height: auto; min-height: 0; padding: 22px 5%; }
+  .stats-inner { width: 100%; grid-template-columns: 1fr; gap: 17px; padding: 20px 12px; }
+  .stats-inner strong { font-size: 25px; }
+  .stats-inner span { font-size: 11px; }
+  .about { display: flex; flex-direction: column; gap: 18px; padding: 48px 7%; }
+  .about-copy h2 { font-size: clamp(31px, 8vw, 37px); }
+  .about-copy li { font-size: 12px; line-height: 1.5; margin: 13px 0; }
+  .about-photo { width: 100%; padding: 13px 13px 13px 0; }
+  .about-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 18px; }
+  .team { padding: 48px 7%; }
+  .section-title { gap: 12px; margin-bottom: 25px; }
+  .section-title h2 { font-size: 22px; white-space: nowrap; }
+  .team-grid { grid-template-columns: 1fr; max-width: 390px; gap: 18px; }
+  .team-card { padding: 10px; }
+  .team-card img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 25%; }
+  .team-card h3 { font-size: 16px; }
+  .team-card p { font-size: 12px; }
+  .pricing { padding: 48px 7% 52px; }
+  .price-grid { grid-template-columns: 1fr; max-width: 390px; gap: 15px; }
+  .price-card { min-height: 0; padding: 24px 21px; }
+  .price-card h3 { font-size: 16px; }
+  .price { font-size: 40px; }
+  .price-card li { font-size: 12px; padding-bottom: 12px; }
+  .price-btn { font-size: 10px; padding: 13px 8px; }
+  .newsletter { padding: 20px 5% 30px; }
+  .newsletter > div { padding: 25px 15px; border-radius: 12px; }
+  .newsletter h2 { font-size: 18px; line-height: 1.4; }
+  .newsletter-form { flex-direction: column; gap: 7px; background: transparent; padding: 0; }
+  .newsletter-form input { width: 100%; min-height: 44px; border-radius: 3px; font-size: 12px; }
+  .newsletter-form button { min-height: 44px; border-radius: 3px; font-size: 11px; }
+  .footer { padding: 36px 7% 18px; }
+  .footer-top { grid-template-columns: 1fr; gap: 26px; }
+  .footer-brand { grid-column: auto; }
+  .footer-brand > p { font-size: 12px; }
+  .footer-brand > strong, .footer-links > strong { font-size: 11px; }
+  .hours { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 11px; }
+  .footer-links { font-size: 12px; }
+  .footer-bottom { display: flex; flex-direction: column; gap: 10px; font-size: 10px; line-height: 1.6; }
+}
+@media (max-width: 380px) {
+  .hero-copy { padding-left: 6%; padding-right: 6%; }
+  .hero h1 { font-size: 30px; }
+  .hero-visual { height: 290px; }
+  .hero-visual > .float-card.best { left: 3% !important; bottom: 7% !important; }
+  .hero-visual > .float-card.best strong { font-size: 19px; }
+  .section-title span { max-width: 45px; }
+  .hours { grid-template-columns: 1fr; }
+}
