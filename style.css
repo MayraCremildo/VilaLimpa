@@ -93,3 +93,10 @@
     height: 100%;
   }
 }
+
+/* Cartão "Melhor" sempre flutuante sobre a fotografia do hero */
+.hero-visual .best {
+  left: 5%;
+  bottom: 12%;
+  z-index: 3;
+}
