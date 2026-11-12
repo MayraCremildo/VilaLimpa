@@ -341,3 +341,17 @@
   .team-card h3 { font-size: 12px; }
   .footer { padding-left: 18px; padding-right: 18px; }
 }
+
+
+/* Mobile: fotografia principal mais acima, logo após o cabeçalho */
+@media (max-width: 640px) {
+  .hero-visual {
+    order: -1;
+    margin-top: 18px;
+    margin-bottom: 35px;
+  }
+  .hero-copy {
+    order: 1;
+    padding-top: 24px;
+  }
+}
