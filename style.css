@@ -76,3 +76,20 @@
     min-height: 0;
   }
 }
+
+
+/* Hero: imagem encostada ao topo da página, como na referência */
+@media (min-width: 641px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero-visual {
+    margin-top: 0;
+    height: 100%;
+    min-height: 0;
+  }
+  .hero-visual > img {
+    top: 0;
+    height: 100%;
+  }
+}
