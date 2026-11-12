@@ -112,3 +112,28 @@
   z-index: 10 !important;
   margin: 0 !important;
 }
+
+/* Cartão Melhor sobreposto à moldura/borda inferior da fotografia */
+.hero-visual {
+  position: relative;
+  overflow: visible;
+}
+.hero-visual > img {
+  border-radius: inherit;
+}
+.hero-visual > .float-card.best {
+  position: absolute !important;
+  left: -9% !important;
+  bottom: 16% !important;
+  top: auto !important;
+  right: auto !important;
+  z-index: 20 !important;
+  margin: 0 !important;
+}
+@media (max-width: 640px) {
+  .hero-visual { overflow: visible; }
+  .hero-visual > .float-card.best {
+    left: 4% !important;
+    bottom: 12% !important;
+  }
+}
