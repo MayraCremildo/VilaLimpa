@@ -45,3 +45,34 @@
  .price-card{min-height:300px}
  .about-photo img{height:300px}
 }
+
+
+/* Ajuste da primeira dobra: menu mais à esquerda e hero completo no ecrã */
+@media (min-width: 641px) {
+  .header {
+    justify-content: flex-start;
+  }
+  .nav {
+    margin-left: clamp(55px, 10vw, 145px);
+  }
+  .hero {
+    height: 100vh;
+    height: 100svh;
+    min-height: 620px;
+    grid-template-columns: 1.08fr .92fr;
+    align-items: stretch;
+  }
+  .hero-copy {
+    align-self: center;
+  }
+  .hero-visual {
+    height: 100%;
+    min-height: 0;
+  }
+}
+@media (max-width: 640px) {
+  .hero {
+    height: auto;
+    min-height: 0;
+  }
+}
