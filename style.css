@@ -100,3 +100,15 @@
   bottom: 12%;
   z-index: 3;
 }
+
+/* Posicionamento explícito do cartão Melhor sobre a imagem */
+.hero-visual { position: relative; }
+.hero-visual > .float-card.best {
+  position: absolute !important;
+  top: auto !important;
+  left: 5% !important;
+  bottom: 12% !important;
+  right: auto !important;
+  z-index: 10 !important;
+  margin: 0 !important;
+}
